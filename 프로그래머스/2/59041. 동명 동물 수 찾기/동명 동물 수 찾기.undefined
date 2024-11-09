@@ -1,0 +1,7 @@
+select NAME,
+       count(NAME) as COUNT_SAME_NAME
+from ANIMAL_INS
+where NAME IS NOT NULL
+GROUP BY NAME
+having COUNT_SAME_NAME >= 2
+ORDER BY NAME
