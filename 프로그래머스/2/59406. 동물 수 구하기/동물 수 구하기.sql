@@ -1,0 +1,2 @@
+select count(ANIMAL_ID) as COUNT_ANIMALS
+from ANIMAL_INS
